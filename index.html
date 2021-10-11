@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/4f5ef1e857.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .section-weather {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px 0px;
+            max-width: calc(100% - 40%);
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        input#search-field {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section-weather">
+            <form class="col-md-8 mx-auto">
+                <div class="input-group mb-3">
+                    <input id="search-field" type="text" class="form-control border-0 rounded-pill bg-light"
+                        placeholder="Weather in your city">
+                    <div>
+                        <button onclick="searchTemperature()" type="button" class="btn btn-light rounded-circle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div id="weather-status" class="weather-status text-white text-center">
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h1 id="city">Dhaka</h1>
+                <h3><span id="temperature">30</span>&deg;C</h3>
+                <h1 id="condition" class="lead">Clouds</h1>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
